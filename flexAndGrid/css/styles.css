@@ -32,11 +32,8 @@
   }
 }
 @media (max-width: 959px) {
-  .grid__card:nth-last-child(2) {
-    grid-column: span 1/span 2;
-  }
   .grid__card:last-child {
-    grid-column: span 2/span 2;
+    grid-column: span 2/span 3;
   }
 }
 @media (max-width: 719px) {
