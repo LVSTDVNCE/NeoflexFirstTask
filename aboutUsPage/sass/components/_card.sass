@@ -1,0 +1,60 @@
+@mixin flex-column-center
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.card
+  width: 300px
+  @include flex-column-center
+  position: relative
+  margin-bottom: 40px
+  
+  &__figure
+    @include flex-column-center
+    justify-content: center
+
+  &__img
+    width: 80px
+    height: 80px
+    padding: 10px
+    object-fit: none
+    border: 1px solid #d3d3d3
+    border-radius: 50%
+    margin-bottom: 30px
+  
+  &__heading
+    font-size: 26px
+    margin-bottom: 30px
+
+  &__text
+    display: block
+    width: 90%
+    color: #777777
+
+  &:nth-of-type(1):after,
+  &:nth-of-type(1):before,
+  &:nth-of-type(2):before
+    right: 0
+
+  &:nth-of-type(2):after,
+  &:nth-of-type(3):before,
+  &:nth-of-type(3):after
+    left: 0
+
+  &:before,
+  &:after
+    content: ""
+    position: absolute
+    top: 40px
+    width: 27%
+    height: 1px
+    background: #d3d3d3
+
+@media screen and (max-width: 899px)
+  .card:before,
+  .card:nth-of-type(3):after
+    width: 0px
+
+@media screen and (max-width: 599px)
+  .card:after
+    width: 0px

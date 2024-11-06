@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.buttonUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 100ms ease-out;
+}
+.buttonUp:hover {
+  background-color: #3d7aff;
+}
+.buttonUp__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.buttonUp__img {
+  width: 30px;
+  height: 30px;
+  transition: 100ms ease-out;
+}
+.buttonUp__img:hover {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}/*# sourceMappingURL=styles.css.map */

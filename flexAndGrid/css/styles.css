@@ -1,0 +1,37 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex__card {
+  min-width: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  box-shadow: 0px 1px 7px 0px rgba(47, 47, 47, 0.2);
+  flex: content;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+  padding: 0 20px 0 20px;
+}
+.grid__card {
+  min-width: 200px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 7px;
+  box-shadow: 0px 1px 7px 0px rgba(47, 47, 47, 0.2);
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.text {
+  font-size: 14px;
+}/*# sourceMappingURL=styles.css.map */
