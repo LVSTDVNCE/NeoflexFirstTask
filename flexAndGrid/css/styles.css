@@ -31,9 +31,16 @@
     grid-column: span 4/span 4;
   }
 }
-@media (max-width: 959px) {
-  .grid__card:last-child {
-    grid-column: span 2/span 3;
+@media (min-width: 720px) and (max-width: 959px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "A A B B C C" "D D E E E E";
+  }
+  .grid__card:nth-child(1), .grid__card:nth-child(2), .grid__card:nth-child(3) {
+    grid-column: span 2;
+  }
+  .grid__card:nth-child(4), .grid__card:nth-child(5) {
+    grid-column: span 3;
   }
 }
 @media (max-width: 719px) {
